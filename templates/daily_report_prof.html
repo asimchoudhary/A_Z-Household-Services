@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Earning Oppurtunity</h3>
+    <b>There are services , which you can grab now!!</b>
+    <br />
+    <ul>
+      {% for service in service_requests %}
+      <li>Service ID : {{ service.service_request_id}}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

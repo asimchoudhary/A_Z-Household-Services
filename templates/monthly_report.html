@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Monthly Report of Services Request</h3>
+
+    <span><b>Total Requests made : </b>{{total_requests}}</span>
+    <br />
+    <span><b>Total Requests Pending : </b>{{total_requests_pending}}</span>
+    <br />
+    <span><b>Total Requests Completed : </b>{{total_requests_completed}}</span>
+    <br />
+    <h5>Service Request Categories:</h5>
+    <ul>
+      {% for category in categories %}
+      <li>{{ category }}</li>
+      {% endfor %}
+    </ul>
+
+    <h5>Remarks given for the completed services:</h5>
+    <ul>
+      {% for remark in remarks %}
+      <li>{{ remark }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
